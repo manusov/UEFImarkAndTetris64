@@ -1,0 +1,5 @@
+21.01.2022.  v1.09.
+Bug fixed with addressing video memory above 4GB.
+Subroutine Fast_Update_Video_SSE (source file FASTUPDT.INC), line 97:
+Buggy:    mov ecx,[_Vmem_Base+r15]
+Correct:  mov rcx,[_Vmem_Base+r15]

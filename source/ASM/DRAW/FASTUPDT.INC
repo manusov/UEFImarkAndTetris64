@@ -94,7 +94,7 @@ mov [rsp+24],rbx           ; Set transit buffer address
 mov [rsp+32],rax           ; Set transit buf. Y-addend
 ;--- Set parameters for Destination#2 = Video memory ---
 movzx rax,word [_Video_Xbytes+r15]
-mov ecx,[_Vmem_Base+r15]
+mov rcx,[_Vmem_Base+r15]
 mov [rsp+48],rax           ; Set Video RAM Y-addend
 mul rsi                    ; Calculate Y-offset
 add rdi,rax                ; Add X-offset

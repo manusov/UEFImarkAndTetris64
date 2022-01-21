@@ -5,19 +5,14 @@
 ;===========================================================================;
 
 ;--- Common messages ---
-
-; String_Version	DB  'UEFImark v1.06. '
-; String_Version	DB  'UEFImark v1.07 DEBUG. '
-
 ;--- This 2 strings must be sequental, without separation by 0 ---
-String_Version		DB  'UEFImark v1.08. '
-String_Copyright	DB  '(C) IC Book Labs.',0
-;---
+String_Version		     DB  'UEFImark v1.09. '
+String_Copyright	     DB  '(C) IC Book Labs.',0
 
-Program_Vendor_Data_1   DB  '  '
-Program_Vendor_Data     DB  'http://uefi.composter.com.ua/' , 0
+Program_Vendor_Data_1  DB  '  '
+Program_Vendor_Data    DB  'http://uefi.composter.com.ua/' , 0
 
-Msg_Starting            DB  0Dh,0Ah,0Ah,'Starting...',0Dh,0Ah,0
+Msg_Starting           DB  0Dh,0Ah,0Ah,'Starting...',0Dh,0Ah,0
 
 ;--- Configuration file support ---
 
